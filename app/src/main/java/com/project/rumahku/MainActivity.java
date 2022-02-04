@@ -10,16 +10,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     Button btDinding;
-    Button btAtap;
-    Button btLantai;
+    Button btTentang;
+    //Button btLantai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Tombol Dinding
         btDinding = findViewById(R.id.btDinding);
-
         btDinding.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,22 +27,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btAtap = findViewById(R.id.btAtap);
-
-        btAtap.setOnClickListener(new View.OnClickListener() {
+        //Tombol Tentang
+        btTentang = findViewById(R.id.btTentang);
+        btTentang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MainActivity3.class));
             }
         });
 
-        btLantai = findViewById(R.id.btLantai);
-
+        //Tombol Lantai
+        /*btLantai = findViewById(R.id.btLantai);
         btLantai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, MainActivity4.class));
             }
-        });
+        });*/
     }
 }
